@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ephesis&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+            rel="stylesheet"
+        />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Elina Jonsson</h1>
+
+            <div class="nav-wrapper">
+                <nav class="navbar">
+                    <a href="index.html">Home</a>
+                    <a href="about-me.html">About Me</a>
+                    <a href="cv.html">CV</a>
+                    <a href="portfolio.html" class="active">Portfolio</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="portfolio">
+                <h2>My projects</h2>
+                <p>
+                    Check out some of my projects down below, or all of them on
+                    my
+                    <a
+                        href="https://github.com/Elina-Jonsson?tab=repositories"
+                        target="_blank"
+                        >GitHub page.</a
+                    >
+                </p>
+
+                <article class="project1">
+                    <h3>FourFinance</h3>
+                    <img src="images/fourfinance3.png" alt="Banking App" />
+                    <button data-project="fourfinance" class="project-btn">
+                        More Info
+                    </button>
+                </article>
+
+                <article class="project2">
+                    <h3>X-mas Games</h3>
+                    <img src="images/xmas-pic2.png" alt="Christmas game" />
+                    <button data-project="xmas" class="project-btn">
+                        More Info
+                    </button>
+                </article>
+
+                <article class="project3">
+                    <h3>P-anik</h3>
+                    <img src="images/panik2.png" alt="Parking App" />
+                    <button data-project="panik" class="project-btn">
+                        More Info
+                    </button>
+                </article>
+
+                <article class="project4">
+                    <h3>HighSchool</h3>
+                    <img src="images/highschool3.png" alt="School admin" />
+                    <button data-project="school" class="project-btn">
+                        More Info
+                    </button>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2026 Elina Jonsson</p>
+            <div class="social-links">
+                <a href="https://github.com/Elina-Jonsson" target="_blank"
+                    >GitHub</a
+                >
+                <a
+                    href="https://www.linkedin.com/in/elina-jonsson-904bba383/"
+                    target="_blank"
+                    >LinkedIn</a
+                >
+            </div>
+        </footer>
+
+        <div id="project-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h3 id="modal-title"></h3>
+                <p id="modal-description"></p>
+            </div>
+        </div>
+    </body>
+</html>
