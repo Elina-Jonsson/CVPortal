@@ -1,0 +1,331 @@
+:root {
+  --color-bg: #FFF3FB;
+  --color-text: black;
+
+  --font-heading: 'JetBrains Mono', monospace;
+  --font-body: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+*{  
+  box-sizing: border-box;
+}
+
+html, body{
+  background-color: var(--color-bg);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 100%;
+  width: 100%;
+  padding: 1rem;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column; 
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.nav-wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5rem;
+  align-items: center;
+  margin: 0;
+}
+
+.navbar li, .navbar ul{
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.navbar a{
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  padding: 2px 20px;
+  border-radius: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  font-family: var(--font-body);
+}
+
+.navbar a.active {
+  box-shadow:  2px 4px rgba(184, 115, 112, 0.5);
+}
+
+.navbar a:hover {
+  background-color:  #FFF3FB;
+  transform: translateY(-3px);
+  z-index: 1;
+}
+
+header h1 {
+  white-space: nowrap;
+  max-width: 100%;        
+  font-family: var(--font-heading);
+  margin: 0;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.welcome-text h2{
+  font-family: var(--font-heading);
+}
+
+.welcome-text{
+  display: flex;
+  flex-direction: column;
+ /* max-width: 600px;*/
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  background-image: linear-gradient(to right top, #ffffff, #f6f6fe, #ebedfd, #dfe4fc, #d1dcfc, #d3dbfc, #d4d9fb, #d6d8fb, #e5ddfa, #f1e4f9, #f9ebf9, #fff3fb);
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.inspiration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 1rem;
+}
+
+.inspiration img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow:  0 8px 15px  rgba(184, 115, 112, 0.5);
+}
+
+.quote {
+  text-align: center;
+  max-width: 500px;
+}
+
+/* Container layout */
+.explore-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.explore1, .explore2{
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem;
+  box-shadow:  0 4px 10px  rgba(184, 115, 112, 0.5);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.explore1 img{
+  border-radius: 80%;
+  max-width: 200px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.explore2 img{
+  border-radius: 80%;
+  max-width: 200px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.explore-container a{
+  text-decoration: none;
+  color: #bcc4f3;
+}
+
+footer {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 0.5rem; 
+  border-top: white solid 5px;
+  font-family: var(--font-body);
+}
+
+.social-links a:hover{
+  color: #bcc4f3;
+}
+
+.social-links a{
+  color: black;
+  text-decoration: none;
+  margin-right: 40px;
+}
+
+.easter-bg {
+background: #ffe9f5;
+transition: background 0.5s;
+}
+
+.modal {
+  position: fixed;          
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;            
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1000;           
+  opacity: 0;
+  animation: fadeIn 0.3s forwards; 
+}
+
+.modal-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.close-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px){
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .nav-wrapper{
+    display: flex;
+    justify-content:space-around; 
+    width: 80%;            
+  }
+
+  .navbar {
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navbar ul {
+    flex-direction: row; 
+    gap: 2rem;
+  }
+
+  .navbar li {
+    width: auto; 
+  }
+
+  main{
+    display: flex;
+  }
+
+  header h1{
+    text-align: left;     
+    max-width: 50%;         
+    font-size: 2rem;       
+    margin-left: 8rem;      
+  }
+
+  .welcome-text{
+    display: flex;
+    max-width: 100%;
+    height: 200px;
+    
+  }
+
+  .inspiration {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+    gap: 10rem;
+  }
+
+  .quote {
+    max-width: 45%;
+    text-align: left;
+  }
+
+  .inspiration img {
+    max-width: 600px;
+  }
+
+  .explore-container {
+    flex-direction: row;  
+    gap: 5rem;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 2rem;
+    margin-top: 1rem;
+  }
+
+  .explore1, .explore2{
+    flex: 1 1 45%;
+    max-width: none;
+    min-height: 350px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .explore1 img{
+    max-width: 250px;
+  }
+
+  .explore2 img{
+    max-width: 250px;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    margin-top: 8rem;
+  }
+}

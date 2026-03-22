@@ -1,0 +1,64 @@
+
+.portfolio{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 1rem;
+}
+
+.portfolio a{
+  color: black;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.portfolio a:hover{
+  z-index: 1;
+  transform: translateY(-3px);
+  color: #bcc4f3;
+}
+
+.portfolio h2{
+  color: #bcc4f3;
+  text-decoration: underline;
+}
+
+.portfolio img{
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 80%; 
+  border: 5px solid black;
+}
+
+.project-description{
+  background-color: white;   
+  padding: 10px 15px;        
+  border-radius: 8px;        
+  margin-top: 10px;          
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+    .portfolio {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .portfolio article {
+    width: 60%;  
+  }
+
+  .portfolio article:nth-child(odd) {
+    margin-left: -15%;
+  }
+
+  .portfolio article:nth-child(even) {
+    margin-left: auto;
+    margin-right: -10%;
+  }
+}

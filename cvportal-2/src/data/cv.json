@@ -1,0 +1,92 @@
+{
+    "profile": {
+        "name": "Elina Jonsson",
+        "description": "Current Fullstack .NET Developer student with a strong interest in developing further in a practical work environment through an internship (LIA). I am structured, communicative, and solution-oriented, with a solid ability to plan my work and take responsibility for tasks from start to finish. I am motivated by collaborating with others, contributing with commitment, and applying my knowledge in real-world projects."
+    },
+
+    "skills": {
+        "core": [ 
+        "C# / .NET", 
+        "SQL Server / SSMS & ORM",
+        "REST API / Swagger / Scalar",
+        "HTML / CSS & JavaScript",
+        "Agile Methodologies"
+    ],
+    "upcoming": [
+      "Advanced Fullstack",
+      "Blazor / Razor",
+      "Azure"
+    ]
+    },
+
+    "softskills": {
+        "core":
+        [
+            "Project Management",
+            "Problem Solving",
+            "Attetion to Detail",
+            "Time Management",
+            "Social & Communication Skills",
+            "Flexibility & Innovative Thinking"
+        ]
+    },
+
+    "education": {
+     "items": [
+        {
+            "title": "Fullstack Developer .NET",
+            "date": "September 2025 - Ongoing",
+            "description": "Higher Vocational Education (YH), Chas Academy, Stockholm"
+        },
+
+        {
+            "title": "Hairdresser",
+            "date": "March 2019 - December 2019",
+            "description": "Vocational Education, Ann Pettersson Hairdesignschool, Örnsköldsvik"
+        },
+
+        {
+            "title": "Construction and Infrastructure",
+            "date": "June 2014",
+            "description": "High School Diploma, specialization in Painting, Parkskolan, Örnsköldsvik"
+        }
+      ]
+    },
+
+    "workexperience":{
+        "items":[
+
+            {
+                "title":"Painter",
+                "date":"January 2023 - Ongoing",
+                "location": "O.Nybergs Måleri, Stockholm",
+                "responsibilities":[
+                    "Performed painting work according to blueprints, schedules, and quality requirements.",
+                    "Worked in a structured and meticulous manner in collaboration with colleagues."
+                ]
+            
+
+            },
+
+            {
+                "title":"Hairdresser",
+                "date":"January 2020 - December 2022",
+                "location": "Huvudverket, Örnsköldsvik",
+                "responsibilities": [
+                    "Provided personal and professional customer service, both in-salon and via phone/email.",
+                    "Managed administrative tasks such as document handling and bookings."
+                ]
+            },
+
+              {
+                "title":"Painter",
+                "date":"June 2014 - November 2017",
+                "location": "Renmarks Måleri, Örnsköldsvik",
+                "responsibilities": [
+                    "Journeyman's Certificate (Gesällbrev)."
+                ]
+            }
+        ]
+    }
+}
+

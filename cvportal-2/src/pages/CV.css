@@ -1,0 +1,98 @@
+.cv-section{
+  flex: 1 1 45%;
+  min-height: 250px;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #FFF3FB;
+  box-shadow: 0 6px 15px rgba(184, 115, 112, 0.5);
+  width: 100%;
+}
+
+.cv-page{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 1rem;
+}
+
+.cv-softskills ul li{
+  margin-bottom: 2rem;
+}
+
+.cv-page h2{
+  color: #bcc4f3;
+}
+
+  @media (min-width: 768px) {
+
+    .cv-page{
+    flex-direction: row;   
+    flex-wrap: wrap;          
+    justify-content: space-between; 
+    gap: 1.5rem;
+    padding: 2rem;
+    margin-top: 2rem;
+    align-items: stretch;
+  }
+
+  .cv-section{
+    flex: 1 1 45%; 
+    flex-wrap: wrap;
+    max-width: 750px;
+  }
+
+  .cv-job{
+    padding: 0 0 0 4rem;
+    margin-left: 22rem;
+
+  }
+
+  .cv-work{
+    align-content: center;
+  }
+
+  .cv-work h2{
+    padding: 0 0 0 rem;
+    margin-bottom: 3rem;
+  }
+    
+  }
+
+  @media print{
+  header{
+    display: none;
+  }
+  
+  body {
+    background: white;
+    color: black;
+  }
+
+  .cv-page {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 2rem;
+    gap: 1.5rem;
+    color: black;
+  }
+
+  .cv-section {
+    box-shadow: none;
+    page-break-inside: avoid;
+    margin-bottom: 2rem;
+  }
+
+  .cv-work{
+    padding: 0;
+  }
+
+  .cv-page h2{
+    color: black;
+  }
+
+  footer{
+    display: none;
+  }
+
+}
